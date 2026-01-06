@@ -1,7 +1,21 @@
 /*
 /*/
 !.gitignore
-!.config
+
+.config/*
+.config/*/
+!.config/
+!.config/README.md
+!.config/nvim/
+!.config/bspwm/
+!.config/ly/
+!.config/rofi/
+!.config/yazi/
+!.config/picom/
+!.config/kitty/
+!.config/mpv/
+!.config/sxhkd/
+
 !.gitconfig
 !.xinitrc
 
@@ -13,7 +27,7 @@
 !.bash_logout
 
 # zsh
-!/zsh/
+!zsh/
 !.zshrc
 !.zprofile
 !.zshenv
