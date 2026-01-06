@@ -1,0 +1,21 @@
+/*
+/*/
+!.gitignore
+!.config
+!.gitconfig
+!.xinitrc
+
+# bash
+!.bashrc
+!.bash_profile
+!.bash_aliases
+!.bash_constants
+!.bash_logout
+
+# zsh
+!/zsh/
+!.zshrc
+!.zprofile
+!.zshenv
+!.zlogin
+!.zlogout

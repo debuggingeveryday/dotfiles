@@ -1,0 +1,40 @@
+# # Lines configured by zsh-newuser-install
+# HISTFILE=~/.histfile
+# HISTSIZE=1000
+# SAVEHIST=1000
+# bindkey -e
+# # End of lines configured by zsh-newuser-install
+# # The following lines were added by compinstall
+# zstyle :compinstall filename '/home/scrubs/.zshrc'
+#
+# autoload -Uz compinit
+# compinit
+# # End of lines added by compinstall
+# #
+
+
+zstyle ':omz:update' mode disabled
+
+source $HOME/zsh/oh-my-zsh.sh
+
+source $HOME/.zshenv
+
+# Install package zsh-syntax-highlighting
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source $HOME/zsh/plugins/fzf/fzf.plugin.zsh
+source $HOME/zsh/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
+source $HOME/zsh/plugins/git-prompt/git-prompt.plugin.zsh
+
+plugins=(
+  zsh-syntax-highlighting
+  zsh-autocomplete
+  zsh-autosuggestions
+  zsh-history-substring-search
+  fzf
+  zsh-interactive-cd
+  git-prompt
+)
+
