@@ -1,0 +1,13 @@
+require "nvchad.mappings"
+
+-- add yours here
+
+local map = vim.keymap.set
+
+map("n", ";", ":", { desc = "CMD enter command mode" })
+map("i", "jk", "<ESC>")
+
+map("n", "<F12>", "<cmd> TimerSession pomodoro<cr>", { desc = "Pomodoro Start" })
+
+map("n", "K", "Eli<CR><Esc>", { desc = "Enter next line" })
+-- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")

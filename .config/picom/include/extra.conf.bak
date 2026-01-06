@@ -1,0 +1,47 @@
+active-opacity = 1.0;
+inactive-opacity = 1.0;
+frame-opacity = 1.0;
+
+corner-radius = 10
+
+fade-in-step = 0.1
+fade-out-step = 0.1
+
+backend = "glx"
+glx-no-stencil = true
+glx-copy-from-front = true
+
+# blur-size = 1000
+# blur-background = true
+
+blur-background-exclude = [
+    "window_type = 'dock'",
+    "window_type = 'desktop'",
+];
+
+wintypes:
+{
+  dropdown_menu = { fade = true; shadow = false; focus = true; };
+  popup_menu = { fade = true; shadow = false; focus = true; };
+};
+
+blur-method = "dual_kawase"
+
+fading = true;
+
+xrender-sync-fence = true
+
+opacity-rule = [
+    "70:class_g = 'code-oss' && !focused",
+    "80:class_g = 'code-oss' && focused",
+
+    "80:class_g = 'Thorium-browser' && !focused",
+    "98:class_g = 'Thorium-browser' && focused",
+
+    "70:class_g = 'Alacritty' && !focused",
+    "80:class_g = 'Alacritty' && focused",
+];
+
+rounded-corners-exclude = [
+    "class_g = 'Eww'"
+];
