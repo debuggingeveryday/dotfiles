@@ -16,6 +16,7 @@ local options = {
     typescriptreact = { "prettierd", "prettier" },
     javascriptreact = { "prettierd", "prettier" },
     sh = { "shfmt" },
+    zsh = { "shfmt" },
     yuck = { "fnlfmt" },
   },
 

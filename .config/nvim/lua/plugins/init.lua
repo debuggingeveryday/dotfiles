@@ -85,4 +85,29 @@ return {
 
   { "nvzone/volt", lazy = true },
   { "nvzone/minty", cmd = { "Shades", "Huefy" } },
+
+  {
+    "nvim-telescope/telescope.nvim",
+    defaults = {
+      file_ignore_patterns = { "node_modules", ".git", ".env", ".local" }, -- optional: add specific ignores
+    },
+    pickers = {
+      find_files = {
+        hidden = true,
+      },
+    },
+    keys = {
+      {
+        "<leader>fF",
+        "<cmd>Telescope find_files hidden=true no_ignore=true no_ignore_parent=true<cr>",
+        desc = "Find Files (Hidden)",
+      },
+    },
+    opts = function(_, opts)
+      -- set default picker theme to ivy for all pickers
+      opts.defaults = require("telescope.themes").get_ivy {
+        layout_config = { height = 0.30 },
+      }
+    end,
+  },
 }

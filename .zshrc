@@ -27,6 +27,7 @@ source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring
 source $ZSH/plugins/fzf/fzf.plugin.zsh
 source $ZSH/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
 source $ZSH/plugins/git-prompt/git-prompt.plugin.zsh
+source $ZSH/plugins/dotenv/dotenv.plugin.zsh
 
 plugins=(
   zsh-syntax-highlighting
@@ -36,5 +37,6 @@ plugins=(
   fzf
   zsh-interactive-cd
   git-prompt
+  dotenv
 )
 

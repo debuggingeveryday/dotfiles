@@ -33,3 +33,5 @@
 !.zshenv
 !.zlogin
 !.zlogout
+
+!.env.example

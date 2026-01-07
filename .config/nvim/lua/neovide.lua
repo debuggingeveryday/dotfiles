@@ -1,4 +1,7 @@
-vim.o.guifont = "Fira Code:h9"
+vim.o.guifont = vim.env.DOTENV_NVIM_GUIFONT
+-- stylua: ignore
+print(vim.env.DOTENV_NVIM_GUIFONT)
+
 vim.g.neovide_window_blurred = false
 vim.g.neovide_opacity = 0.8
 vim.g.neovide_normal_opacity = 0.8
@@ -29,3 +32,9 @@ vim.keymap.set("v", "<C-v>", '"+P', { noremap = true })
 vim.keymap.set("n", "<C-v>", '"+P', { noremap = true })
 -- Paste in Insert mode (Ctrl+V)
 vim.keymap.set("i", "<C-v>", '<ESC>l"+Pli', { noremap = true }) -- May need adjustment for cursor position
+
+vim.keymap.set("v", "<C-c>", '"+y', { noremap = true })
+
+vim.keymap.set("c", "<C-v>", '"+P', { noremap = true })
+
+-- vim.keymap.set("t", "<C-v>", '"+P', { noremap = true })
