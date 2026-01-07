@@ -15,18 +15,18 @@
 
 zstyle ':omz:update' mode disabled
 
-source $HOME/zsh/oh-my-zsh.sh
-
 source $HOME/.zshenv
+source $ZSH/oh-my-zsh.sh
+
 
 # Install package zsh-syntax-highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
-source $HOME/zsh/plugins/fzf/fzf.plugin.zsh
-source $HOME/zsh/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
-source $HOME/zsh/plugins/git-prompt/git-prompt.plugin.zsh
+source $ZSH/plugins/fzf/fzf.plugin.zsh
+source $ZSH/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
+source $ZSH/plugins/git-prompt/git-prompt.plugin.zsh
 
 plugins=(
   zsh-syntax-highlighting
