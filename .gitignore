@@ -27,7 +27,7 @@
 !.bash_logout
 
 # zsh
-!zsh/
+!.zsh/
 !.zshrc
 !.zprofile
 !.zshenv
