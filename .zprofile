@@ -8,6 +8,7 @@ alias vim="nvim"
 alias ranger="yazi"
 alias rm="trash"
 
+
 picom &
 
 $(cd $HOME/PROJECT/widgets && ./start.sh) &
@@ -18,4 +19,3 @@ feh --bg-scale $HOME/Pictures/Wallpaper/itachi-uchiha-dark-3840x2160-20031.jpg $
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tool
-
