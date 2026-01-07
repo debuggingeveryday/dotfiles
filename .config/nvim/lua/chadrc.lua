@@ -16,7 +16,7 @@ M.base46 = {
 
 -- M.nvdash = { load_on_startup = true }
 M.ui = {
-  theme = "vscode_dark",
+  theme = "dark_horizon",
   transparency = true,
   lazyload = true,
   hl_override = {
