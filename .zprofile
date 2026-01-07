@@ -11,8 +11,8 @@ alias rm="trash"
 
 picom &
 
-$(cd $HOME/PROJECT/widgets && ./start.sh) &
-feh --bg-scale $HOME/Pictures/Wallpaper/itachi-uchiha-dark-3840x2160-20031.jpg $HOME/Pictures/Wallpaper/2025-07-18-23:45:36-screenshot.png
+(cd $HOME/PROJECT/widgets/ ; sh start.sh) &
+feh --bg-scale $HOME/Pictures/Wallpaper/itachi-uchiha-dark-3840x2160-20031.jpg $HOME/Pictures/Wallpaper/2025-07-18-23:45:36-screenshot.png &
 
 # nice xwinwrap -g 1920x1080+0+0 -b -s -st -sp -nf -ov -fdt -d -ni -- mpv -wid WID --really-quiet --framedrop=vo --no-audio --panscan="1.0" --loop ~/Downloads/5590457-uhd_3840_2160_30fps.mp4
 
