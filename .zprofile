@@ -3,17 +3,18 @@ emulate sh -c 'source /etc/profile'
 
 # Override config
 
-alias vi="nvim"
-alias vim="nvim"
+alias vi="sh -c 'neovide $@'"
+alias vim="sh -c 'neovide $@'"
 alias ranger="yazi"
-alias rm="trash"
-
 
 picom &
+dunst &
 
 (cd $HOME/PROJECT/widgets/ ; sh start.sh) &
 
-feh --bg-scale $HOME/Pictures/Wallpaper/wallpaper-1.jpg $HOME/Pictures/Wallpaper/wallpaper-2.jpg &
+# hsetroot -cover $HOME/Pictures/Wallpaper/wallpaper-1.jpg -extend $HOME/Pictures/Wallpaper/wallpaper-2.jpg &
+
+feh --bg-scale $HOME/Picture/Wallpaper/wallpaper-1.jpg $HOME/Picture/Wallpaper/wallpaper-2.png &
 
 # nice xwinwrap -g 1920x1080+0+0 -b -s -st -sp -nf -ov -fdt -d -ni -- mpv -wid WID --really-quiet --framedrop=vo --no-audio --panscan="1.0" --loop ~/Downloads/5590457-uhd_3840_2160_30fps.mp4
 

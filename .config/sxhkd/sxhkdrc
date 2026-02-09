@@ -4,7 +4,7 @@
 
 # screenshot
 super + F12
-  cd /home/scrubs/PROJECT/arch_linux/UTIL/screen-shot.sh
+  $HOME/PROJECT/arch_linux/UTIL/screen-shot.sh
 
 # terminal emulator
 super + Return
