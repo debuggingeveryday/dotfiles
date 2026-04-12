@@ -40,3 +40,4 @@ plugins=(
   dotenv
 )
 
+export EDITOR=nvim
