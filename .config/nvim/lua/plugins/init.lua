@@ -15,9 +15,12 @@ return {
 
   { "wakatime/vim-wakatime", lazy = false },
 
+  {'akinsho/git-conflict.nvim', version = "*", config = true},
+
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
   --
+  
   {
     "github/copilot.vim",
     lazy = false,
