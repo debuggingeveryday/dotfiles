@@ -4,7 +4,7 @@
 
 # screenshot
 super + F12
-  $HOME/PROJECT/arch_linux/screen-shot.sh
+  ( cd /home/scrubs/PROJECT/arch_linux ; ./screen-shot.sh )
 
 # terminal emulator
 super + Return
@@ -19,6 +19,7 @@ super + Escape
 	pkill -USR1 -x sxhkd; \
 	bspc wm -r
 
+#
 # bspwm hotkeys
 #
 
@@ -123,8 +124,3 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
-
-
-# Dota
-
-

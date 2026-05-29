@@ -1,12 +1,5 @@
 emulate sh -c 'source /etc/profile'
 
-
-# Override config
-
-alias vi="sh -c 'neovide $@'"
-alias vim="sh -c 'neovide $@'"
-alias ranger="yazi"
-
 picom &
 dunst &
 
