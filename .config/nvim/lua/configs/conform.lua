@@ -18,6 +18,7 @@ local options = {
     sh = { "shfmt" },
     zsh = { "shfmt" },
     yuck = { "fnlfmt" },
+    python = { "black" }
   },
 
   format_on_save = {

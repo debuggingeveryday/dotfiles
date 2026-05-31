@@ -1,10 +1,13 @@
 [opener]
 edit = [
-    { run = 'nvim "$@"', block = true, desc = "Edit with Neovim" }
+    { run = 'nvim "$@"', block = true, desc = "Edit with Neovim" },
+    { run = 'mpv "$@"', orphan = true, for = "unix" }
 ]
 
 [open]
 rules = [
-    { mime = "text/*", use = "edit" }
+    { mime = "text/*", use = "edit" },
+    { mime = "video/*", use = "play" },
+	  { mime = "audio/*", use = "play" },
 ]
 
