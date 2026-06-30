@@ -14,8 +14,8 @@
 
 # Override config
 
-alias ranger="yazi"
-alias rm="trash"
+# alias ranger="yazi"
+# alias rm="trash"
 # alias vi="sh 'neovide $@'"
 # alias vim="sh 'neovide $@'"
 # alias nvim="sh 'neovide $@'"
