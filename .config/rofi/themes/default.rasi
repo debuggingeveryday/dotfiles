@@ -19,6 +19,7 @@ configuration {
 	display-window: "";
 	drun-display-format: "{name}";
 	window-format: "{w} · {c} · {t}";
+  terminal: "kitty";
 }
 
 /*****----- Global Properties -----*****/

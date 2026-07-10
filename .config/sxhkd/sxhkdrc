@@ -8,7 +8,7 @@ super + F12
 
 # terminal emulator
 super + Return
-  kitty
+  xterm
 
 # program launcher
 super + d

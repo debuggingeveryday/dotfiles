@@ -48,3 +48,18 @@ plugins=(
 )
 
 export EDITOR=nvim
+export TERMINAL=kitty
+
+# Define the npm packages path
+NPM_PACKAGES="${HOME}/.npm-packages"
+
+# Add global binaries to your system PATH
+export PATH="$NPM_PACKAGES/bin:$PATH"
+
+# Point Node to the correct local module directory
+export NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+

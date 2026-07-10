@@ -18,3 +18,10 @@ map("v", "<", "<gv")
 
 -- Keep selection when shifting right
 map("v", ">", ">gv")
+
+map("i", "<Tab>", "\t", { desc = "Indent block" })
+
+map('i', '<C-j>', 'copilot#Accept("\\<CR>")', {
+  expr = true,
+  replace_keycodes = false
+})
